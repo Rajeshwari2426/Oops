@@ -8,6 +8,7 @@ using OopsConcepts.Polymorphism;
 using OopsConcepts.Inheritence;
 using OopsConcepts.Encapsulation;
 using OopsConcepts.Constructor;
+using OopsConcepts.Classes;
 
 namespace OopsConcepts
 {
@@ -15,6 +16,24 @@ namespace OopsConcepts
     {
         static void Main(string[] args)
         {
+            // Classes------------------------------------------------------------------
+            Car ford = new Car();
+            Console.WriteLine(ford.color);
+            Console.WriteLine(ford.maxSpeed);
+            ford.Horn();
+
+            Car tesla = new Car();
+            tesla.color = "Blue";
+            tesla.maxSpeed = 250;
+            tesla.model = 3;
+            tesla.sunRoof = true;
+
+            Console.WriteLine(tesla.color);
+            Console.WriteLine(tesla.maxSpeed);
+            Console.WriteLine(tesla.sunRoof);
+            tesla.Horn();
+
+
             // Constructor -----------------------------------------------------------
             CarConstruct honda = new CarConstruct("City", "Black", "Sedan", 200);
 
