@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using OopsConcepts.Abstraction;
 using OopsConcepts.Polymorphism;
+using OopsConcepts.Inheritence;
+using OopsConcepts.Encapsulation;
 
 namespace OopsConcepts
 {
@@ -12,6 +14,17 @@ namespace OopsConcepts
     {
         static void Main(string[] args)
         {
+            // Encapsulation -------------------------------------------------------
+            Encapsulating person = new Encapsulating();
+            person.Name = "Tony";
+            Console.WriteLine(person.Name);
+
+
+            //Inheritance-------------------------------------------------------------
+            DerivedCar company = new DerivedCar();
+            Console.WriteLine( company.brand +company.type +" " + company.color +" " + company.maxSpeed);
+
+             
             //Polymorphism-----------------------------------------------------------
             Animals myAnimal = new Animals();
             myAnimal.animalSound();

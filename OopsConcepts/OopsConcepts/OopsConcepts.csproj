@@ -45,6 +45,9 @@
   <ItemGroup>
     <Compile Include="Abstraction\Animal.cs" />
     <Compile Include="Abstraction\Snake.cs" />
+    <Compile Include="Encapsulation\Encapsulating.cs" />
+    <Compile Include="Inheritence\BaseCar.cs" />
+    <Compile Include="Inheritence\DerivedCar.cs" />
     <Compile Include="Polymorphism\Animals.cs" />
     <Compile Include="Polymorphism\Dog.cs" />
     <Compile Include="Program.cs" />
